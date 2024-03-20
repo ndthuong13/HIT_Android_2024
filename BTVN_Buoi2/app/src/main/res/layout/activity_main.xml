@@ -405,9 +405,6 @@
 
         </LinearLayout>
     </LinearLayout>
-<<<<<<< HEAD
-  </LinearLayout>
-=======
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -470,5 +467,6 @@
             </androidx.cardview.widget.CardView>
         </LinearLayout>
     </LinearLayout>
-</LinearLayout>
->>>>>>> c2be42d (BTVNB2)
+  </LinearLayout>
+
+
