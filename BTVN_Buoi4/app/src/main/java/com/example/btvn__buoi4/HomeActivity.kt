@@ -17,15 +17,15 @@ class HomeActivity : AppCompatActivity() {
         binding = HomeMobileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        emailAddress = intent.getStringExtra("username").toString()
+        emailAddress = intent.getStringExtra("Email").toString()
         pass = intent.getStringExtra("pass").toString()
-
-        val layoutManager = LinearLayoutManager(this)
-        binding.recyclerView.layoutManager = layoutManager
 
         userAdapter = userAdapterActivity(userList)
 
         binding.recyclerView.adapter = userAdapter
+
+        val layoutManager = LinearLayoutManager(this)
+        binding.recyclerView.layoutManager = layoutManager
 
         addUserToList(emailAddress, pass)
 

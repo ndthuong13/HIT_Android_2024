@@ -106,7 +106,7 @@
                 android:text="Already have an account?"
                 android:layout_marginRight="20dp"/>
             <TextView
-                android:id="@+id/signUp"
+                android:id="@+id/signIn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sign in"

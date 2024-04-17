@@ -3,7 +3,6 @@ package com.example.btvn__buoi4
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.btvn__buoi4.databinding.HomeMobileBinding
 import com.example.btvn__buoi4.databinding.LoginScreenBinding
 
 class loginActivity: AppCompatActivity() {
@@ -26,7 +25,7 @@ class loginActivity: AppCompatActivity() {
         }
     }
     private fun navigateToHome(emailAddress: String, password: String) {
-        val intent = Intent(this, HomeMobileBinding::class.java)
+        val intent = Intent(this, HomeActivity::class.java)
         intent.putExtra("Email", emailAddress)
         intent.putExtra("pass", password)
         startActivity(intent)

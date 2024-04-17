@@ -3,7 +3,6 @@ package com.example.btvn__buoi4
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import com.example.btvn__buoi4.databinding.SignUpScreenBinding
 
 class signupActivity : AppCompatActivity() {
@@ -14,8 +13,13 @@ class signupActivity : AppCompatActivity() {
         setContentView(binding.root)
         val intent1 = Intent(this, HomeActivity::class.java)
 
-        binding.EmailAddress.setOnClickListener{
+        binding.signIn.setOnClickListener{
             intent = Intent(this, loginActivity ::class.java)
+            startActivity(intent)
+        }
+
+        binding.Register.setOnClickListener{
+            intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
     }
